@@ -1,0 +1,39 @@
+@use "../util/" as *;
+
+.alert {
+  @include toFlex();
+  padding: 12px;
+  gap: 8px;
+  border-radius: 6px;
+  width: 100%;
+
+  &__profile,
+  .highlight--img {
+    align-self: flex-start;
+    width: 40px;
+  }
+
+  .message {
+    border: solid 1px $message;
+    border-radius: 5px;
+    margin-top: 8px;
+    padding: 10px;
+  }
+
+  .message:hover {
+    background-color: $notif-new;
+    cursor: pointer;
+  }
+
+  &__activity,
+  .name,
+  .highlight--txt {
+    padding: auto 4px;
+  }
+
+  .name:hover,
+  .highlight--txt:hover {
+    cursor: pointer;
+    color: $highlight;
+  }
+}

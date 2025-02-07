@@ -1,0 +1,15 @@
+@use "../util/" as *;
+
+.alert--new {
+  background-color: $new;
+}
+
+.new::after {
+  content: " ";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $alert;
+  position: absolute;
+  margin: 7px 5px;
+}

@@ -1,0 +1,52 @@
+@use "../util/" as *;
+
+body,
+button {
+  color: $font-secondary;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 16px;
+}
+
+.notifications {
+  &__header {
+    font-weight: 800;
+    justify-content: space-between;
+
+    button {
+      font-weight: 500;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      color: $bg;
+      background-color: $highlight;
+      border-radius: 5px;
+      padding: 2px 10px;
+    }
+  }
+
+  &__alerts {
+    font-size: 14px;
+    font-weight: 500;
+
+    .alert__activity {
+      font-weight: 800;
+      .highlight--txt {
+        color: $font-highlight;
+      }
+      .group {
+        color: $highlight;
+      }
+    }
+
+    .message {
+      font-weight: 800;
+    }
+  }
+
+  h2,
+  .name {
+    color: $font-primary;
+  }
+}
