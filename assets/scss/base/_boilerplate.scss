@@ -2,6 +2,10 @@
 
 body {
   background-color: $bg;
+
+  @include breakpoint(medium) {
+    background-color: $new;
+  }
 }
 
 .sr-only {
