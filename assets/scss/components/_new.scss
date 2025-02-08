@@ -4,6 +4,10 @@
   background-color: $new;
 }
 
+.alert--new:hover {
+  cursor: pointer;
+}
+
 .new::after {
   content: " ";
   width: 8px;
