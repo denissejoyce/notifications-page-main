@@ -17,12 +17,10 @@ function readAll() {
   count.textContent = alertCount;
 }
 
-let num = 0;
-for (const newAlert of newAlerts) {
-  newAlert.addEventListener("click", function () {
-    newAlert.classList.remove("alert--new");
+for (let num = 0; num <= 2; num++) {
+  newAlerts[num].addEventListener("click", function () {
+    newAlerts[num].classList.remove("alert--new");
     alerts[num].classList.remove("new");
-    num++;
     alertCount--;
     alertCount < 0 ? (count.textContent = 0) : (count.textContent = alertCount);
   });

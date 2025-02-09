@@ -10,10 +10,10 @@
 
 .new::after {
   content: " ";
-  width: 8px;
-  height: 8px;
+  width: 0.444em;
+  height: 0.444em;
   border-radius: 50%;
   background-color: $alert;
   position: absolute;
-  margin: 7px 5px;
+  margin: 0.389em 0.278em;
 }

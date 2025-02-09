@@ -4,7 +4,7 @@ body,
 button {
   color: $font-secondary;
   font-family: "Plus Jakarta Sans", serif;
-  font-size: 16px;
+  font-size: clamp(0.875rem, 4.267vw, 1.125rem);
 }
 
 .notifications {
@@ -16,18 +16,18 @@ button {
       font-weight: 500;
     }
     h2 {
-      font-size: 20px;
+      font-size: clamp(1rem, 5.333vw, 1.222rem);
     }
     p {
       color: $bg;
       background-color: $highlight;
       border-radius: 5px;
-      padding: 2px 10px;
+      padding: 0.111em 0.556em;
     }
   }
 
   &__alerts {
-    font-size: 14px;
+    font-size: clamp(0.667rem, 3.733vw, 0.889rem);
     font-weight: 500;
 
     .alert__activity {
